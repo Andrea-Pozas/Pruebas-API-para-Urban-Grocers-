@@ -42,7 +42,7 @@ Para __la cantidad comestibles que se pueden agregar a un kit__. al realizar una
 
 Para __el costo del servicio de entrega Order and Go en relación al horario__ al realizar una solitud desde Postman,la API permite:
 - Realizar una solicitud de pedido con un horario fuera del rango del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
-- Realizar una solictud de pedido con un peso que sobrepasa los límites del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+- Realizar una solictud de pedido con un peso que sobrepasa los límites del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request https://github.com/Andrea-Pozas/Pruebas-API-para-Urban-Grocers-/issues/2 :pushpin:
 - Realizar una solitud de pedido con una cantidad de productos que sobrepasa los límites del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
 
 Los bugs mencionados anteriormente resultan de suma importancia para Urban Grocers y para el usuario. Si el usuario decide ingresar un pedido con un horario fuera del rango de entrega, sobrepasando la cantidad de productos y de peso las solicitudes serán aceptadas por la API y la empresa tendrá que realizar el sevicio o recibir una una mala reseña debido a la experiencia del usuario.  
