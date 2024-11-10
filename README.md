@@ -36,7 +36,7 @@ La pruebas positivas y negativas cubrieron cada parámetro del query tomando en 
 Se realizaron un total de 72 pruebas, en la ejecución de pruebas se detectaron 27 errores. Realicé reportes para cada error en Jira. Algunos de los errores encontrados más importantes fueron:
 
 Para __la cantidad comestibles que se pueden agregar a un kit__. al realizar una solitud desde Postman,la API permite: 
--   Agregar un comestibles con un ID   0(inexistente) al kit . La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+-   Agregar un comestibles con un ID   0(inexistente) al kit . La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request https://github.com/Andrea-Pozas/Pruebas-API-para-Urban-Grocers-/issues/1 :pushpin:
 -   Introducir una cantidad negativa al especificar la cantidad de productos que se deben agregar al kit.  La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
 -   Agregar la cantidad de producto sin introducir un ID de producto. La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
 
