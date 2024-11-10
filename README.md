@@ -31,9 +31,17 @@ La pruebas positivas y negativas cubrieron cada parámetro del query tomando en 
 :arrow_right:__Si deseas ver los casos de prueba da clic aquí:__ [Pruebas API Urban Grocers](https://docs.google.com/spreadsheets/d/1OCjp-zlPLeroSW8WfMx8laL7XVKU0KoE/edit?usp=sharing&ouid=103915261935983096380&rtpof=true&sd=true)
 
 # Resultados 
-Se realizaron 72 pruebas en total donde fueron encontrados 27 errores. Realicé reportes para cada error en Jira. Algunos de los errores encontrados más importantes fueron:
+Se realizaron un total de 72 pruebas, en la ejecución de pruebas se detectaron 27 errores. Realicé reportes para cada error en Jira. Algunos de los errores encontrados más importantes fueron:
 
 Para __la cantidad comestibles que se pueden agregar a un kit__. al realizar una solitud desde Postman,la API permite: 
--   Agregar comestibles al kit con un ID 0(inexistente). La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
--   Agregar una cantidad negativa al especificar la cantidad de productos que se deben agregar al kit.  La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+-   Agregar un comestibles con un ID   0(inexistente) al kit . La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+-   Introducir una cantidad negativa al especificar la cantidad de productos que se deben agregar al kit.  La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+-   Agregar la cantidad de producto sin introducir un ID de producto. La solicutd arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+
+Para __el costo del servicio de entrega Order and Go en relación al horario__ al realizar una solitud desde Postman,la API permite:
+- Realizar una solicitud de pedido con un horario fuera del rango del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+- Realizar una solictud de pedido con un peso que sobrepasa los límites del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+- Realizar una solitud de pedido con una cantidad de productos que sobrepasa los límites del servicio de entrega Order and Go. La solicitud arroja un código de respuesta 200OK en lugar de un código 400 Bad request
+
+Los bugs mencionados anteriormente resultan de suma importancia para Urban Grocers y para el usuario. Si el usuario decide ingresar un pedido con un horario fuera del rango de entrega, sobrepasando la cantidad de productos y de peso las solicitudes serán aceptadas por la API y la empresa tendrá que realizar el sevicio o recibir una una mala reseña debido a la experiencia del usuario.  
  
