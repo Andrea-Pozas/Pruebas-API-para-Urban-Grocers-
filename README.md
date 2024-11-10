@@ -1,5 +1,7 @@
 # Pruebas-API-para-Urban-Grocers- :fork_and_knife:
 Urban Grocers es una aplicación de entrega de productos por catálogo y kits comestibles. El área de desarrollo agregó una nueva función en la API de Urban Grocers, así que fue necesario realizar pruebas para dos aspectos: la cantidad comestibles que se pueden agregar a un kit y comprobar si el costo del servicio de entrega Order and Go en relación al horario es correcto según los requisitos.
+![Urban Grocers](https://github.com/Andrea-Pozas/Pruebas-API-para-Urban-Grocers-/blob/main/images/Urban%20Grocers.png)
+
 # Herramientas 
 ![Static Badge](https://img.shields.io/badge/Excel-black?style=for-the-badge&logoColor=white&color=%233CB371) ![Static Badge](https://img.shields.io/badge/Jira-%230052CC?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/Postman-%23FF6C37?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/C%C3%B3digos%20HTTP-%2373DC8C?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/ApiDoc-%230055DA?style=for-the-badge)
 
